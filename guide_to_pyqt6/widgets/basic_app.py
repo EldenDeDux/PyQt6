@@ -74,6 +74,7 @@ class MainWindow(QMainWindow):
             output += "your name."
         else:
             output = f"You entered {name} as your name."
+        self.output_label.setText(output)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
